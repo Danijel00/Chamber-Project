@@ -1,0 +1,62 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin container{
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding-left: var(--pad-left);
+  padding-right: var(--pad-right);
+}
+
+/* ========== MEDIA QUERIES DESKTOP ========== */
+
+// 768px, 1024px, 1500px
+$breakpoints-up: (
+  "medium": "48em",
+  "large": "64em",
+  "xlarge": "93.75em",
+) !default;
+
+/* ========== MEDIA QUERIES MOBILE/TABLET ========== */
+
+// 767px, 1023px, 1399px
+$breakpoints-down: (
+  "small": "48em",
+  "medium": "63.9375em",
+  "large": "93.6875em",
+) !default;
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+.hide-for-mobile {
+  // Hide for tablet and mobile devices
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  // Hide for desktop
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

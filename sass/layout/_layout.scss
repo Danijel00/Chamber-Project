@@ -1,0 +1,37 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.container {
+  @include container;
+}
+
+.section {
+  padding-top: var(--pt-350); // 46px
+  padding-bottom: var(--pb-300); // 58px
+
+  &__title {
+    font-size: var(--h1-font-size);
+    color: var(--title-clr);
+    text-transform: capitalize;
+    margin-bottom: var(--mb-450); // mobile 43px
+    font-weight: var(--fw-medium);
+    color: var(--clr-blue-600);
+  }
+
+  &__subtitle {
+    font-size: var(--h2-font-size);
+    font-weight: var(--fw-semi-bold);
+    margin-bottom: var(--mb-300); // mobile 33px
+    color: var(--clr-orange-400);
+  }
+
+  &__text {
+    font-size: var(--h2-font-size);
+    font-weight: var(--fw-normal);
+    color: var(--clr-grey-500);
+    margin-bottom: var(--mb-500);
+  }
+}
+
+.grid {
+  display: grid;
+}

@@ -1,0 +1,16 @@
+// BASE
+@import "base/mixins";
+@import "base/globals";
+@import "base/variables";
+@import "base/animations";
+
+// COMPONENTS
+@import "components/header";
+@import "components/home";
+@import "components/news";
+@import "components/discover";
+@import "components/video";
+@import "components/footer";
+
+// LAYOUT
+@import "layout/layout";

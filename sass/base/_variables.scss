@@ -1,0 +1,132 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-mobile: 4.375rem;
+  --header-desktop: 10rem;
+
+  /*========== Colors ==========*/
+  /* Blue colors */
+  --clr-blue-100: #bcdbe0; // Mabel
+  --clr-blue-200: #9fc8ce; // Morning Glory
+  --clr-blue-300: #72ccd2; // Blue shade light
+  --clr-blue-400: #74d7ea; // Blue shade
+  --clr-blue-500: #008ca7; // Blue
+  --clr-blue-600: #006a71; // Teal
+  --clr-blue-700: #00245d; // Prussian Blue
+
+  /* Green colors */
+  --clr-green-400: #92bc1e;
+  --clr-green-500: #96c121;
+
+  /* White colors */
+  --clr-white: #ffffff;
+  --clr-white-300: #edf7f9;
+  --clr-white-400: #dfecee;
+
+  /* Orange colors */
+  --clr-orange-400: #f58025;
+  --clr-orange-500: #f15d22;
+
+  /* Grey colors */
+  --clr-grey-400: #c4c4c4;
+  --clr-grey-500: #717073;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Montserrat", sans-serif;
+
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  // Size
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-250: 0.6875rem;
+  --size-280: 0.8875rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-425: 1.125rem;
+  --size-450: 1.25rem;
+  --size-500: 1.5rem;
+  --size-550: 1.875rem;
+  --size-600: 2rem;
+  --size-620: 2.1875rem;
+  --size-630: 2.3125rem;
+  --size-650: 2.5rem;
+  --size-670: 2.6875rem;
+  --size-700: 3rem;
+  --size-750: 3.1875rem;
+  --size-780: 3.4375rem;
+  --size-800: 4rem;
+  --size-850: 4.375rem;
+  --size-900: 5rem;
+  --size-950: 6.125rem;
+  --size-1000: 6.6875rem;
+
+  // MARGINS
+  --mb-200: 1.5rem; // 24px
+  --mb-250: 1.8125rem; // 29px
+  --mb-300: 2.0625rem; // 33px -> 37px
+  --mb-400: 2.5rem; // 40px
+  --mb-450: 2.6875rem; // 43px -> 48px
+  --mb-500: 3.1875rem; // 51px -> 58px
+  --mb-550: 3.25rem; // 52px 
+
+  // PADDINGS
+  --pb-200: 2rem;
+  --pb-300: 3.625rem; // 58px -> 99px
+  --pb-350: 3.875rem; // 62px
+
+  --pt-400: 3.1875rem; // 51 px -> 58px 
+  --pt-300: 2.6875rem; // 43px
+  --pt-350: 2.875rem; // 46px
+  --pt-900: 10.5625rem; // 169px
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  /*========== Hover overlay ==========*/
+  --img-transition: 300ms;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+
+  // Container
+  --max-w: 90rem; // 1440px
+  --pad-left: 1.75rem; // 28px
+  --pad-top: 1.125rem; // 18px
+  --pad-right: 1.25rem; // 20px
+  --pad-bottom: 0.75rem; // 12px
+}
+
+// 1024px
+@include breakpoint-up(large) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 36px;
+    --h2-font-size: 24px;
+    --normal-font-size: 1rem;
+    --small-font-size: 15px;
+    --smaller-font-size: 12px;
+    --pad-left: 2.625rem; // 42px
+    --pad-top: 1.125rem; // 18px
+    --pad-right: 1.125rem; // 18px
+
+    // MARGINS
+    --mb-300: 2.3125rem; // 37px
+    --mb-450: 3rem; // 48px
+    --mb-500: 3.625rem; // 58px
+    // PADDINGS
+    --pb-300: 6.1875rem; // 58px -> 99px
+    --pb-200: 2.5625rem;
+    --pt-400: 3.625rem; // 51px -> 58px
+  }
+}

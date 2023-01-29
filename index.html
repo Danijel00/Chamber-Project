@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--=============== AOS ANIMATIONS ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--=============== CUSTOM CSS ===============-->
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>CHATTANOOGA AREA CHAMBER</title>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header class="header" id="header" data-aos="fade-down">
+      <nav class="nav__primary container" aria-label="Primary navigation">
+        <a href="#" class="nav__primary-logo">
+          <picture>
+            <source
+              media="(min-width:1024px)"
+              srcset="assets/img/logo-xl.svg"
+            />
+            <img src="./assets/img/logo-xs.svg" alt="header-logo" />
+          </picture>
+        </a>
+        <div class="nav__primary-menu" id="primary-menu">
+          <ul role="list" class="nav__primary-list" id="primary-list">
+            <li class="nav__primary-item">
+              <a class="nav__primary-link" href="#">WHY WORKING WITH US</a>
+              <span
+                ><img src="assets/img/vector-down.svg" alt="vector-down"
+              /></span>
+            </li>
+            <li class="nav__primary-item">
+              <a class="nav__primary-link" href="#">LOCATE HERE</a>
+              <span
+                ><img src="assets/img/vector-down.svg" alt="vector-down"
+              /></span>
+            </li>
+            <li class="nav__primary-item">
+              <a class="nav__primary-link" href="#">INDUSTRIES</a>
+              <span
+                ><img src="assets/img/vector-down.svg" alt="vector-down"
+              /></span>
+            </li>
+
+            <li class="nav__primary-item nav__primary-items">
+              <a class="nav__primary-link fs-300 fw-semi-bold" href="#"
+                >ABOUT</a
+              >
+              <a class="nav__primary-link fs-300 fw-semi-bold" href="#"
+                >NEWS & EVENTS</a
+              >
+              <a class="nav__primary-link fs-300 fw-semi-bold" href="#"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__primary-toggle highlight-none" id="primary-toggle">
+          <div class="visually-hidden">Primary menu toggle</div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home__container grid">
+          <article class="home__article" data-aos="fade-right">
+            <h2 class="home__subtitle section__subtitle">Maecenas mollis</h2>
+            <h1 class="home__title section__title">
+              Lorem ipsum <span>Sit dolor vestibulum</span>
+            </h1>
+            <p class="home__text section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              non nunc vitae ligula lobortis iaculis vel id ligula. Nunc
+              dignissim, urna aliquam egestas ultrices, purus urna iaculis nunc,
+              vel pharetra mi sapien sed mauris. Curabitur egestas enim
+              venenatis, auctor tortor a, iaculis velit. Quisque non est quis
+              neque interdum venenatis.
+            </p>
+
+            <a href="#" class="button button--flex home__button highlight-none"
+              >CLICK BUTTON
+              <em class="bx bx-right-arrow-alt home__button-arrow"></em>
+            </a>
+          </article>
+
+          <div class="home__gallery" data-aos="fade-left">
+            <div class="hide-for-mobile home__group">
+              <div class="home__group-1"></div>
+              <div class="home__group-2"></div>
+              <div class="home__group-3"></div>
+            </div>
+            <div class="home__slider">
+              <img
+                src="assets/img/home/pattern.svg"
+                class="home__slider-pattern"
+                alt="patterns"
+              />
+              <div class="home__carousel">
+                <!-- PREVIOUS SLIDE -->
+                <button
+                  class="home__carousel-left btn-slide highlight-none"
+                  id="slide-prev"
+                  aria-label="Previous slide"
+                >
+                  <em class="bx bx-left-arrow-alt home__carousel-arrow"></em>
+                </button>
+                <!-- NEXT SLIDE -->
+                <button
+                  class="home__carousel-right btn-slide highlight-none"
+                  id="slide-next"
+                  aria-label="Next slide"
+                >
+                  <em class="bx bx-right-arrow-alt home__carousel-arrow"></em>
+                </button>
+              </div>
+              <!-- SLIDE 1 -->
+              <div class="home__slide active">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="assets/img/home/home-1xl.jpg"
+                  />
+                  <img src="assets/img/home/home-1xs.jpg" alt="home-1" />
+                </picture>
+              </div>
+              <!-- SLIDE 2 -->
+              <div class="home__slide">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="assets/img/home/home-2xl.jpg"
+                  />
+                  <img src="assets/img/home/home-2xs.jpg" alt="home-2" />
+                </picture>
+              </div>
+              <!-- SLIDE 3 -->
+              <div class="home__slide">
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="assets/img/home/home-3xl.jpg"
+                  />
+                  <img src="assets/img/home/home-3xs.jpg" alt="home-3" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news section">
+        <div class="container" data-aos="fade-down">
+          <article class="news__article">
+            <h2 class="section__subtitle news__article-subtitle">
+              NEWS YOU CAN USE
+            </h2>
+            <h1 class="section__title news__article-title">
+              Lorem ipsum <br />
+              Sit dolor vestibulum
+            </h1>
+            <p class="section__text news__article-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              non nunc vitae ligula lobortis iaculis vel id ligula. Nunc
+              dignissim, urna aliquam egestas ultrices, purus urna iaculis nunc,
+              vel pharetra mi sapien sed mauris.
+            </p>
+          </article>
+
+          <div class="news__filter grid highlight-none" id="button-filter">
+            <button
+              type="button"
+              class="news__filter-item active"
+              onclick="filterNews('All')"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="news__filter-item"
+              onclick="filterNews('News')"
+            >
+              News
+            </button>
+            <button
+              type="button"
+              class="news__filter-item"
+              onclick="filterNews('Events')"
+            >
+              Events
+            </button>
+            <button
+              type="button"
+              class="news__filter-item"
+              onclick="filterNews('Videos')"
+            >
+              Videos
+            </button>
+            <button
+              type="button"
+              class="news__filter-item"
+              onclick="filterNews('Meetings')"
+            >
+              Meetings & agendas
+            </button>
+            <button
+              type="button"
+              class="news__filter-item"
+              onclick="filterNews('Ceds')"
+            >
+              Ceds
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="discover section" id="discover">
+        <div class="container grid">
+          <div
+            class="discover__gallery highlight-none"
+            id="discover-gallery"
+            data-aos="fade-up"
+          >
+            <!-- ==== NEWS CARD REFERENCE FROM news.js ==== -->
+            <!-- <figure class="discover__card" data-name="news">
+              <img
+                src="assets/img/discover/discover-1.jpg"
+                alt="discover-1"
+                class="discover__card-img"
+              />
+              <span class="discover__card-subcategory">NEWS</span>
+              <figcaption class="discover__card-data">
+                <span class="discover__card-date">FEBRUARY 18, 2022</span>
+                <h2 class="discover__card-title">
+                    Lorem ipsum dolor sit amet, consectetur
+                </h2>
+              </figcaption>
+            </figure> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="video section">
+        <div class="video__overlay" id="video-overlay"></div>
+        <div class="video__container container">
+          <article class="video__article">
+            <em class="bx bx-x video__article-close" id="video-close"></em>
+            <span class="video__article-subtitle">FEATURED VIDEO</span>
+            <h1 class="section__title video__article-title">
+              Healthcare <br />
+              Around Town
+            </h1>
+            <p class="video__article-text">
+              Whether you need economic data to move your business, need
+              business assistance or resources to help you make a relocation
+              decision, GPEDC is here for you. Contact us today.
+            </p>
+          </article>
+
+          <div class="video__content">
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="assets/video/hospital-1xl.jpg"
+              />
+              <img
+                src="assets/video/hospital-1xs.jpg"
+                alt="hospital"
+                class="video__content-img"
+              />
+            </picture>
+
+            <video id="video-file" class="video__file">
+              <source src="assets/video/video.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <button
+                type="button"
+                class="button button--flex video__button highlight-none"
+                id="video-button"
+                aria-label="Play button"
+              >
+                <em class="bx bx-play video__button-icon" id="video-icon"></em>
+              </button>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="button video__button-info highlight-none"
+            id="info-button"
+          >
+            Show more info
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href="#" class="">
+          <picture>
+            <source
+              media="(min-width:1024px)"
+              srcset="assets/img/logo-xl.svg"
+            />
+            <img src="./assets/img/logo-xs.svg" alt="header-logo" />
+          </picture>
+        </a>
+        <ul role="list" class="footer__list">
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">WHY WORKING WITH US</a>
+            <span
+              ><img src="assets/img/vector-down.svg" alt="vector-down"
+            /></span>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">LOCATE HERE</a>
+            <span
+              ><img src="assets/img/vector-down.svg" alt="vector-down"
+            /></span>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">INDUSTRIES</a>
+            <span
+              ><img src="assets/img/vector-down.svg" alt="vector-down"
+            /></span>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">ABOUT</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">NEWS & EVENTS</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- ==== SCROLL TO TOP / PROGRESS BAR ==== -->
+    <div class="progress highlight-none" id="progress">
+      <span class="progress-value" id="progress-value">
+        <em class="bx bxs-chevrons-up progress-icon"></em>
+      </span>
+    </div>
+
+    <!-- ===== AOS JAVASCRIPT ===== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ===== MAIN JAVASCRIPT ===== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/news.js"></script>
+  </body>
+</html>
